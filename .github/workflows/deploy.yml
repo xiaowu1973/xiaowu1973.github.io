@@ -31,7 +31,7 @@ jobs:
         run: yarn build
 
       - name: Decrypt TVBox configs to mirror
-        run: python3 mirror/decrypt.py mirror/lines.txt dist/mirror "https://xiaowu1973.github.io/Tvbox-decrypt/mirror"
+        run: python3 tools/tvbox.py mirror/lines.txt dist/tools "https://xiaowu1973.github.io/tools"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
